@@ -12,7 +12,7 @@ body {
 header {
     background-color: #009688;
     color: white;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,8 +35,9 @@ header .logo img {
 header .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0;
+    align-items: center;
 }
 
 header .nav-links a {
@@ -45,24 +46,46 @@ header .nav-links a {
     font-weight: 500;
     font-size: 1rem;
     transition: color 0.3s ease;
+    align-items: center;
+    position: relative;
+    left: 9px;
 }
 
 header .nav-links a:hover {
     color: #ffc107;
 }
 
-header .auth-btn {
-    padding: 0.6rem 1.2rem;
-    background-color: #ff5722;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
+.buttons {
+    display: flex;
+    gap: 10px;
+  }
 
-header .auth-btn:hover {
+  .button {
+    padding: 5px 6px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .login {
+    background-color: #ff5722;
+  }
+
+  .login:hover {
     background-color: #e64a19;
-}
+  }
+
+  .signup {
+    background-color: #ff5722;
+  }
+
+  .signup:hover {
+    background-color: #f9a825;
+  }
+
 
 /* Hero Section */
 .hero {
@@ -241,4 +264,47 @@ footer .social-links img:hover {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.search-container {
+    position: relative;
+    width: 70%;
+    max-width: 200px; /* Controls the max width */
+}
+
+/* Search Input */
+.search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 2px solid #00c853; /* Green border */
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Search Button */
+.search-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Search Icon Styling */
+.search-button i {
+    font-size: 18px;
+    color: #00c853; /* Green color for icon */
+}
+.search-image {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    width: 20px; /* Adjust the size of the image */
+    height: 20px;
+    pointer-events: none; /* Prevent image from interfering with input */
+    right: -45px;
 }
