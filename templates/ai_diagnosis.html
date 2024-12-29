@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Diagnosis System</title>
+    <link rel="stylesheet" href="/static/css/styles_ai_diagnosis.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="/static/images/pic4.png" width="55" style="height: 47px;" alt="Logo">
+            <span>GoodCure</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/appointments">Book Appointment</a></li>
+                <li><a href="/reviews">Patient Reviews</a></li>
+               
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section class="ai-diagnosis">
+        <h2>AI Diagnosis</h2>
+        <p>Enter your symptoms and get diagnosis suggestions based on our AI system.</p>
+
+        <form id="symptom-form" class="symptom-form">
+            <label for="symptoms">Enter Symptoms</label>
+            <textarea id="symptoms" name="symptoms" placeholder="Describe your symptoms..." required></textarea>
+
+            <button type="submit">Get Diagnosis</button>
+        </form>
+
+        <div class="ai-result" id="ai-result">
+            <!-- Results will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GoodCure. All Rights Reserved.</p>
+    </footer>
+
+    <script src="/static/js/ai_diagnosis.js"></script>
+</body>
+</html>

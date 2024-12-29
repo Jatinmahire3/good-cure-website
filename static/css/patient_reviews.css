@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #009688; /* Green header */
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem; /* Slightly larger font */
+    font-weight: bold;
+}
+
+header .logo img {
+    height: 70px;
+    margin-right: 0px;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 11.8px;
+    align-items: center;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    align-items: center;
+    position: relative;
+    left: -43px;
+}
+
+header .auth-btn {
+    padding: 0.7rem 1.2rem;
+    background-color: #ff6600;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Search Bar */
+.search-bar {
+    background: linear-gradient(140deg, #009688, #b3f2ec); /* Gradient background */
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem; /* Increased padding for better spacing */
+}
+
+.search-bar h1 {
+    font-size: 2.4rem; /* Larger heading */
+    margin-bottom: 1.5rem;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Increased gap between search elements */
+    margin-top: 1.5rem;
+}
+
+.search-form input {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 250px;
+}
+
+.search-form button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #e65c00;
+}
+
+/* Doctor List */
+.doctor-list {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.doctor-list h2 {
+    text-align: center;
+    font-size: 2rem; /* Larger font for doctor list heading */
+    margin-bottom: 2.5rem;
+}
+
+.doctor-card {
+    display: flex;
+    background: white;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    gap: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.doctor-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctor-info h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.4rem; /* Slightly larger for doctor names */
+    color: #333;
+}
+
+.doctor-info p {
+    margin: 0.2rem 0;
+    color: #666;
+}
+
+.doctor-info button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.doctor-info button:hover {
+    background-color: #1d63c7;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 4rem; /* Space between content and footer */
+}
+
+/* Subtle Hover Effects */
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 1.5rem; /* Slightly smaller font size on mobile */
+    }
+
+    .search-form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .doctor-list {
+        padding: 2rem 1rem;
+    }
+
+    .doctor-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .doctor-card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .doctor-info h3 {
+        font-size: 1.3rem;
+    }
+
+    .doctor-info p {
+        font-size: 0.9rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
